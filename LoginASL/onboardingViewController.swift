@@ -13,7 +13,8 @@ import paper_onboarding
 @IBDesignable
 class onboardingViewController: UIViewController, PaperOnboardingDelegate, PaperOnboardingDataSource {
     var currIndex = 0
-    @IBOutlet weak var getStartedButton: UIButton!
+    var username: String?
+    @IBOutlet weak var getStartedButton: UIBarButtonItem!
     
     func onboardingItemsCount() -> Int {
         return 3
@@ -69,6 +70,16 @@ class onboardingViewController: UIViewController, PaperOnboardingDelegate, Paper
         descriptionFont: descriptionFont)][index]
     }
     
+    @IBAction func getPressed(_ sender: Any) {
+        print("USERNAME ", username)
+        performSegue(withIdentifier: "boardToPickerSegue", sender: username)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "boardToPickerSegue"{
+            let destVC = segue.destination as! PickerViewController
+            destVC.senderName = sender as! String
+        }
+    }
     func onboardingConfigurationItem( item: OnboardingContentViewItem, index: Int) {
         
     }

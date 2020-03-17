@@ -49,7 +49,7 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var fieldConstraint: NSLayoutConstraint!
     @IBOutlet weak var buttonConstraint: NSLayoutConstraint!
     var tableData = [""]
-    var name: String?
+    var SendInfoObj = SendInfo(sender: "", reciever: "" )
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -68,9 +68,8 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         view.endEditing(true)
     }
     @objc func runTimedCode(){
-        let textMessagesCollection = db.collection("users").document("sid").collection("messages").document("kero").collection("textMessages")
-        
-        
+        print(SendInfoObj.sender + "  to  "+SendInfoObj.reciever)
+        let textMessagesCollection = db.collection("users").document(SendInfoObj.sender).collection("messages").document(SendInfoObj.reciever).collection("textMessages")
         textMessagesCollection.getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -127,7 +126,7 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
         
         
-        let textMessagesCollection = db.collection("users").document("sid").collection("messages").document("kero").collection("textMessages")
+        let textMessagesCollection = db.collection("users").document(SendInfoObj.sender).collection("messages").document(SendInfoObj.reciever).collection("textMessages")
         //textMessagesCollection.document("data")
         
         textMessagesCollection.document("data").getDocument { (document, error) in
@@ -160,11 +159,44 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             }
             textMessagesCollection.document("data").setData(["messageNum": self.messageNum+1])
             
+            let textMessagesCollection2 = self.db.collection("users").document(self.SendInfoObj.reciever).collection("messages").document(self.SendInfoObj.sender).collection("textMessages")
+            //textMessagesCollection.document("data")
+            
+            textMessagesCollection2.document("data").getDocument { (document, error) in
+                if let document = document, document.exists {
+                    self.messageNum = document.get("messageNum") as! Int
+                } else {
+                    self.messageNum = 10000000
+                    let num: [String: Int] = ["messageNum": self.messageNum]
+                    textMessagesCollection2.document("data").setData(num){ err in
+                        if let err = err {
+                            print("Error adding document: \(err)")
+                        } else {
+                            
+                        }
+                    }
+                }
+                print("MESSAGE NUM ",self.messageNum)
+                let message: [String: String] = [
+                    "text": self.messageText.text ?? ""
+                ]
+                
+                let messageDocument = textMessagesCollection2.document("message\(self.messageNum)")
+                messageDocument.setData(message) { err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document successfully written!")
+                        
+                    }
+                }
+                textMessagesCollection2.document("data").setData(["messageNum": self.messageNum+1])
+            }
         }
         
     }
     func setUpUI(){
-        NavItem.title = name
+        NavItem.title = SendInfoObj.reciever
     }
     
 

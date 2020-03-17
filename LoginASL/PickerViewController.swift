@@ -20,6 +20,9 @@ class PickerViewController: UITableViewController, UISearchResultsUpdating {
     var textTimer: Timer?
     var db = Firestore.firestore()
     var resultSearchController = UISearchController()
+    var senderName: String?
+    var recieverName: String?
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -73,7 +76,7 @@ class PickerViewController: UITableViewController, UISearchResultsUpdating {
     }
     
     @objc func runTimedCode(){
-        let recieverDocument = db.collection("users").document("sid").collection("messages")
+        let recieverDocument = db.collection("users")
         recieverDocument.getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -99,12 +102,14 @@ class PickerViewController: UITableViewController, UISearchResultsUpdating {
         } else {
             name = tableData[indexPath.row]
         }
-        performSegue(withIdentifier: "MessageSegue", sender: name)
+        var sender = senderName
+        var infoObj = SendInfo(sender: sender!, reciever: name)
+        performSegue(withIdentifier: "MessageSegue", sender: infoObj)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MessageSegue"{
             let destVC = segue.destination as! MsgViewController
-            destVC.name = sender as? String
+            destVC.SendInfoObj = sender as! SendInfo
         }
     }
     

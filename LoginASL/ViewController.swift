@@ -66,7 +66,7 @@ class ViewController: UIViewController {
             let email = Auth.auth().currentUser?.email
             print(email, "signed in")
             print(uid)
-            performSegue(withIdentifier: "alreadySignedSegue", sender: self)
+            performSegue(withIdentifier: "loginToPickerSegue", sender: email)
         } else {
             print("no user signed in")
             //performSegue(withIdentifier: "notSignedSegue", sender: self)
@@ -99,8 +99,7 @@ class ViewController: UIViewController {
             if (success) {
                 //return ("Account does not exist", false)
                 // if sign in is successful
-               let obj = self.storyboard?.instantiateViewController(withIdentifier: "PickerViewController") as! PickerViewController
-                self.navigationController?.pushViewController(obj, animated: true)
+                self.performSegue(withIdentifier: "loginToPickerSegue", sender: email)
             } else {
                 //return ("Account does not exist", true)
                 //booloo = true
@@ -121,8 +120,9 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "alreadySignedSegue"{
+        if segue.identifier == "loginToPickerSegue"{
             let destVC = segue.destination as! PickerViewController
+            destVC.senderName = sender as! String
         }
     }
     

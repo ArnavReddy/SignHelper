@@ -145,7 +145,7 @@
                         <outlet property="passwordTextField" destination="fgJ-nb-g1c" id="iPS-W2-guD"/>
                         <outlet property="signUpButton" destination="3sr-RF-Qcc" id="bLA-Bu-5aJ"/>
                         <outlet property="usernameTextField" destination="09h-7K-s1O" id="PTX-Ed-U77"/>
-                        <segue destination="h21-PM-QdD" kind="show" identifier="alreadySignedSegue" id="kIh-HT-YU2"/>
+                        <segue destination="h21-PM-QdD" kind="show" identifier="loginToPickerSegue" id="PbQ-Pc-muy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -281,7 +281,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyO-2L-mHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6970" y="-232"/>
+            <point key="canvasLocation" x="6987" y="-207"/>
         </scene>
         <!--Learn ASL-->
         <scene sceneID="FMU-sV-Iz6">
@@ -297,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eax-dn-RLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7796" y="-232"/>
+            <point key="canvasLocation" x="7841" y="-207"/>
         </scene>
         <!--Msg View Controller-->
         <scene sceneID="TqM-eH-Gen">
@@ -381,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXS-ev-GPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6970" y="580"/>
+            <point key="canvasLocation" x="6987" y="580"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="1Cy-uK-AY3">
@@ -593,12 +593,14 @@
                     <navigationItem key="navigationItem" id="52C-8B-jve">
                         <barButtonItem key="rightBarButtonItem" title="Get Started" id="qvX-2X-T73">
                             <connections>
-                                <segue destination="h21-PM-QdD" kind="show" id="yUc-Iy-tta"/>
+                                <action selector="getPressed:" destination="B37-oh-c7N" id="ydW-Yp-ly3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="getStartedButton" destination="qvX-2X-T73" id="ohA-WD-i9l"/>
                         <outlet property="onboardingView" destination="Fh5-zL-TUs" id="3br-OF-tPt"/>
+                        <segue destination="h21-PM-QdD" kind="show" identifier="boardToPickerSegue" id="Y8I-kd-xPF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eQ-sr-1TC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -653,6 +655,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="l2K-Mp-2Ki"/>
-        <segue reference="kIh-HT-YU2"/>
+        <segue reference="PbQ-Pc-muy"/>
     </inferredMetricsTieBreakers>
 </document>

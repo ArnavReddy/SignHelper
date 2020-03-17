@@ -19,6 +19,7 @@ class SignUpController: UIViewController {
     @IBOutlet weak var usernameTextField: LoginTextField!
     @IBOutlet weak var passwordTextField: LoginTextField!
     @IBOutlet weak var signupButton: UIButton!
+    let db = Firestore.firestore()
     var user = ""
     var pass = ""
     var effect: UIVisualEffect!
@@ -78,7 +79,12 @@ class SignUpController: UIViewController {
                 if (success) {
                     //let obj = self.storyboard?.instantiateViewController(withIdentifier: "onboardingViewController") as! onboardingViewController
                     //self.navigationController?.pushViewController(obj, animated: true)
-                    performSegue(withIdentifier: "onboardSegue", sender: email)
+                    let userDocument = self.db.collection("users").document(email)
+                    userDocument.collection("messages")
+                    userDocument.setData([
+                        "name": email
+                    ])
+                    self.performSegue(withIdentifier: "onboardSegue", sender: email)
                 } else {
                     self.animateIn(errMsg: "Account already in use")
                 }
@@ -87,6 +93,13 @@ class SignUpController: UIViewController {
         }
         return ("Account username already in use", false)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "onboardSegue"{
+            let destVC = segue.destination as! onboardingViewController
+            destVC.username = sender as? String
+        }
+    }
+    
     
     func createUser(email: String, password: String, completionBlock: @escaping (_ success: Bool) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) {(authResult, error) in
