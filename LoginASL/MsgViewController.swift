@@ -12,6 +12,7 @@ import Firebase
 class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var messageNum = -1
     var textTimer: Timer?
+    var meSend = [Bool]()
     let db = Firestore.firestore()
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.count
@@ -19,7 +20,13 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = MessagesTableView.dequeueReusableCell(withIdentifier: "Message", for: indexPath)
-        cell.textLabel?.text = tableData[indexPath.row]
+        //if meSend[indexPath.row] == true{
+       //     cell.textLabel?.text = "me: " + tableData[indexPath.row]
+       // }
+        //else{
+        print(meSend)
+            cell.textLabel?.text = tableData[indexPath.row]
+        //}
         return cell
     }
     func animateTable()
@@ -139,7 +146,6 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                     if let err = err {
                         print("Error adding document: \(err)")
                     } else {
-                        
                     }
                 }
             }
@@ -152,9 +158,11 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             messageDocument.setData(message) { err in
                 if let err = err {
                     print("Error writing document: \(err)")
+                    
                 } else {
                     print("Document successfully written!")
-                    
+                    print("arrived")
+                    self.meSend.insert(true, at: 0)
                 }
             }
             textMessagesCollection.document("data").setData(["messageNum": self.messageNum+1])
@@ -187,7 +195,7 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                         print("Error writing document: \(err)")
                     } else {
                         print("Document successfully written!")
-                        
+                        self.meSend.insert(false, at: 0)
                     }
                 }
                 textMessagesCollection2.document("data").setData(["messageNum": self.messageNum+1])

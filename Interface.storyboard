@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="LoginASLWatch" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="Sign Helper" textAlignment="center" id="dLl-3r-h77">
+                            <color key="textColor" red="0.33283390410000002" green="0.5820410077" blue="0.79426663649999996" alpha="0.5976027397" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Sign" id="djJ-PZ-CNe">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.33283390410000002" green="0.5820410077" blue="0.79426663649999996" alpha="0.5976027397" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="T2z-3s-ETd" kind="push" id="N1x-5B-YLV"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Listen" id="cgR-dq-5uc">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.33283390410000002" green="0.5820410077" blue="0.79426663649999996" alpha="0.5976027397" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="uTh-0P-TQI" kind="push" id="ShC-eR-eWj"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="LoginASLWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="611" y="643"/>
+        </scene>
+        <!--Sign in ASL-->
+        <scene sceneID="H0e-hG-jJF">
+            <objects>
+                <controller title="Sign in ASL" id="T2z-3s-ETd" customClass="SignInterfaceController" customModule="LoginASLWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Time Label" textAlignment="center" id="3gH-qA-uMC"/>
+                        <button width="1" height="59" alignment="left" backgroundImage="playpause.fill" catalog="system" id="7ev-tC-yOy">
+                            <color key="titleColor" red="0.0" green="0.47267901800000001" blue="0.58021190069999995" alpha="0.45743257710000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.47267901800000001" blue="0.58021190069999995" alpha="0.45743257710000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="startPressed" destination="T2z-3s-ETd" id="Mua-mv-Mvo"/>
+                            </connections>
+                        </button>
+                        <label width="135" alignment="left" text="Prediction Label" textAlignment="center" id="VKo-s4-Xjf"/>
+                        <button width="1" alignment="left" title="Speak" id="TU9-Yl-tM5">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.0" green="0.47267901800000001" blue="0.58021190069999995" alpha="0.45743257710000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="speakPressed" destination="T2z-3s-ETd" id="Gyz-8E-HOy"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="predictionLabel" destination="VKo-s4-Xjf" id="dPA-dC-tQb"/>
+                        <outlet property="speakButton" destination="TU9-Yl-tM5" id="0oF-Xo-1PH"/>
+                        <outlet property="startButton" destination="7ev-tC-yOy" id="kUn-WR-zRY"/>
+                        <outlet property="timeLabel" destination="3gH-qA-uMC" id="Pef-UT-FBC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-23"/>
+        </scene>
+        <!--Listen Interface Controller-->
+        <scene sceneID="Hpw-qk-XX3">
+            <objects>
+                <controller id="uTh-0P-TQI" customClass="ListenInterfaceController" customModule="LoginASLWatch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="BoE-xj-oar"/>
+                        <label width="136" alignment="left" text="Pred" textAlignment="center" numberOfLines="6" id="Fvl-RL-Lkq"/>
+                    </items>
+                    <connections>
+                        <outlet property="predLabel" destination="Fvl-RL-Lkq" id="QUH-qx-flu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="515" y="32"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="LoginASLWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="611" y="331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playpause.fill" catalog="system" width="64" height="36"/>
+    </resources>
+</document>

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10E75D51BDE7A6BF0B57F74C /* libPods-LoginASL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2161780AD15402BFFEB1F56 /* libPods-LoginASL.a */; };
+		7C1334C0242561770052D243 /* HelloVsYes-7epochs.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C1334BF242561770052D243 /* HelloVsYes-7epochs.mlmodel */; };
+		7C1334C1242561770052D243 /* HelloVsYes-7epochs.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C1334BF242561770052D243 /* HelloVsYes-7epochs.mlmodel */; };
+		7C1334C2242561770052D243 /* HelloVsYes-7epochs.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C1334BF242561770052D243 /* HelloVsYes-7epochs.mlmodel */; };
+		7C21E22924259C6B007AE25D /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E22824259C6B007AE25D /* ListenViewController.swift */; };
+		7C21E22F24259DA4007AE25D /* soundModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E22E24259DA3007AE25D /* soundModel.mlmodel */; };
+		7C21E23024259DA4007AE25D /* soundModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E22E24259DA3007AE25D /* soundModel.mlmodel */; };
+		7C21E23124259DA4007AE25D /* soundModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E22E24259DA3007AE25D /* soundModel.mlmodel */; };
 		7C32F09E241F588300BAAF79 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C32F09C241F588300BAAF79 /* Interface.storyboard */; };
 		7C32F0A0241F588400BAAF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C32F09F241F588400BAAF79 /* Assets.xcassets */; };
 		7C32F0A7241F588400BAAF79 /* LoginASLWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7C32F0A6241F588400BAAF79 /* LoginASLWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -18,7 +26,12 @@
 		7C34F8E7241DD0AC003DD3AD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34F8E6241DD0AC003DD3AD /* OnboardingView.swift */; };
 		7C34F8E9241E02FB003DD3AD /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34F8E8241E02FB003DD3AD /* PickerViewController.swift */; };
 		7C34F8EB241E245A003DD3AD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34F8EA241E245A003DD3AD /* UserCell.swift */; };
+		7C38E1FC24258A7D00BE89CE /* ListenInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C38E1FB24258A7D00BE89CE /* ListenInterfaceController.swift */; };
+		7C38E1FE24258AE700BE89CE /* MySoundClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C38E1FD24258AE700BE89CE /* MySoundClassifier 1.mlmodel */; };
+		7C38E1FF24258AE700BE89CE /* MySoundClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C38E1FD24258AE700BE89CE /* MySoundClassifier 1.mlmodel */; };
+		7C38E20024258AE700BE89CE /* MySoundClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C38E1FD24258AE700BE89CE /* MySoundClassifier 1.mlmodel */; };
 		7C450B8C241F1995005AD7E4 /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C450B8B241F1995005AD7E4 /* MsgViewController.swift */; };
+		7C55EB1B242443EC008E088A /* TestingYes.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 7C55EB1A242443EC008E088A /* TestingYes.rcproject */; };
 		7C58D8E2241CB720003044B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58D8E1241CB720003044B2 /* AppDelegate.swift */; };
 		7C58D8E4241CB720003044B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58D8E3241CB720003044B2 /* SceneDelegate.swift */; };
 		7C58D8E6241CB720003044B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58D8E5241CB720003044B2 /* ViewController.swift */; };
@@ -37,7 +50,12 @@
 		7C82EF78241FFCF600D8FF85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C82EF77241FFCF600D8FF85 /* GoogleService-Info.plist */; };
 		7C82EF7C2420410C00D8FF85 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82EF7B2420410C00D8FF85 /* ARViewController.swift */; };
 		7CA92A64241DC47300F19C78 /* onboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA92A63241DC47300F19C78 /* onboardingViewController.swift */; };
-		A2B71DE45966AE1C1B8B74E5 /* libPods-LoginASL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60340F2C056567F12BF14EEB /* libPods-LoginASL.a */; };
+		7CB588912420930A000EA20E /* SendInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB588902420930A000EA20E /* SendInfo.swift */; };
+		7CBCD10524255AA800641558 /* SignInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBCD10424255AA800641558 /* SignInterfaceController.swift */; };
+		7CE1C81B2426F35D00108AE7 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7CE1C81A2426F35D00108AE7 /* test.wav */; };
+		7CE1C81C2426F35D00108AE7 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7CE1C81A2426F35D00108AE7 /* test.wav */; };
+		7CE1C81E2426FBE100108AE7 /* ResearchKitAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1C81D2426FBE100108AE7 /* ResearchKitAudioViewController.swift */; };
+		7CE1C81F2426FBE100108AE7 /* ResearchKitAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1C81D2426FBE100108AE7 /* ResearchKitAudioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +98,37 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CA92A60241DC07D00F19C78 /* Embed Frameworks */ = {
+		7CE1C7FB2426D34A00108AE7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE1C8102426E83A00108AE7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE1C8132426E84200108AE7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE1C8162426E84B00108AE7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -94,7 +142,9 @@
 
 /* Begin PBXFileReference section */
 		4997EE1B42460479F9BFFE46 /* Pods-LoginASL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginASL.debug.xcconfig"; path = "Target Support Files/Pods-LoginASL/Pods-LoginASL.debug.xcconfig"; sourceTree = "<group>"; };
-		60340F2C056567F12BF14EEB /* libPods-LoginASL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginASL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1334BF242561770052D243 /* HelloVsYes-7epochs.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "HelloVsYes-7epochs.mlmodel"; sourceTree = "<group>"; };
+		7C21E22824259C6B007AE25D /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
+		7C21E22E24259DA3007AE25D /* soundModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = soundModel.mlmodel; path = "LoginASLWatch Extension/soundModel.mlmodel"; sourceTree = SOURCE_ROOT; };
 		7C32F09A241F588300BAAF79 /* LoginASLWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginASLWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C32F09D241F588300BAAF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7C32F09F241F588400BAAF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,7 +159,10 @@
 		7C34F8E6241DD0AC003DD3AD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		7C34F8E8241E02FB003DD3AD /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		7C34F8EA241E245A003DD3AD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		7C38E1FB24258A7D00BE89CE /* ListenInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenInterfaceController.swift; sourceTree = "<group>"; };
+		7C38E1FD24258AE700BE89CE /* MySoundClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MySoundClassifier 1.mlmodel"; sourceTree = "<group>"; };
 		7C450B8B241F1995005AD7E4 /* MsgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
+		7C55EB1A242443EC008E088A /* TestingYes.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TestingYes.rcproject; sourceTree = "<group>"; };
 		7C58D8DE241CB720003044B2 /* LoginASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C58D8E1241CB720003044B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C58D8E3241CB720003044B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +185,12 @@
 		7C82EF77241FFCF600D8FF85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C82EF7B2420410C00D8FF85 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		7CA92A63241DC47300F19C78 /* onboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingViewController.swift; sourceTree = "<group>"; };
+		7CB588902420930A000EA20E /* SendInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendInfo.swift; sourceTree = "<group>"; };
+		7CBCD10424255AA800641558 /* SignInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInterfaceController.swift; sourceTree = "<group>"; };
+		7CE1C81A2426F35D00108AE7 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		7CE1C81D2426FBE100108AE7 /* ResearchKitAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchKitAudioViewController.swift; sourceTree = "<group>"; };
 		9A7F8F75FA744FAB964C21D7 /* Pods-LoginASL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginASL.release.xcconfig"; path = "Target Support Files/Pods-LoginASL/Pods-LoginASL.release.xcconfig"; sourceTree = "<group>"; };
+		E2161780AD15402BFFEB1F56 /* libPods-LoginASL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginASL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2B71DE45966AE1C1B8B74E5 /* libPods-LoginASL.a in Frameworks */,
+				10E75D51BDE7A6BF0B57F74C /* libPods-LoginASL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +248,16 @@
 		7C32F0AA241F588400BAAF79 /* LoginASLWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7C38E1FD24258AE700BE89CE /* MySoundClassifier 1.mlmodel */,
+				7CBCD10424255AA800641558 /* SignInterfaceController.swift */,
+				7C1334BF242561770052D243 /* HelloVsYes-7epochs.mlmodel */,
 				7C32F0AB241F588400BAAF79 /* InterfaceController.swift */,
 				7C32F0AD241F588400BAAF79 /* ExtensionDelegate.swift */,
 				7C32F0AF241F588400BAAF79 /* NotificationController.swift */,
 				7C32F0B1241F588500BAAF79 /* Assets.xcassets */,
 				7C32F0B3241F588500BAAF79 /* Info.plist */,
 				7C32F0B4241F588500BAAF79 /* PushNotificationPayload.apns */,
+				7C38E1FB24258A7D00BE89CE /* ListenInterfaceController.swift */,
 			);
 			path = "LoginASLWatch Extension";
 			sourceTree = "<group>";
@@ -227,10 +289,14 @@
 		7C58D8E0241CB720003044B2 /* LoginASL */ = {
 			isa = PBXGroup;
 			children = (
+				7C55EB1A242443EC008E088A /* TestingYes.rcproject */,
+				7C21E22824259C6B007AE25D /* ListenViewController.swift */,
+				7C21E22E24259DA3007AE25D /* soundModel.mlmodel */,
 				7C58D8E1241CB720003044B2 /* AppDelegate.swift */,
 				7C58D8E3241CB720003044B2 /* SceneDelegate.swift */,
 				7C58D8E5241CB720003044B2 /* ViewController.swift */,
 				7C58D8FA241CE6F4003044B2 /* SignUpController.swift */,
+				7CE1C81A2426F35D00108AE7 /* test.wav */,
 				7C58D8F8241CC198003044B2 /* LoginTextField.swift */,
 				7C58D8E7241CB720003044B2 /* Main.storyboard */,
 				7C58D8ED241CB723003044B2 /* Assets.xcassets */,
@@ -243,7 +309,10 @@
 				7C34F8E8241E02FB003DD3AD /* PickerViewController.swift */,
 				7C34F8EA241E245A003DD3AD /* UserCell.swift */,
 				7C450B8B241F1995005AD7E4 /* MsgViewController.swift */,
+				7C6DBA9D242065C5000075A0 /* Experience.rcproject */,
 				7C82EF7B2420410C00D8FF85 /* ARViewController.swift */,
+				7CB588902420930A000EA20E /* SendInfo.swift */,
+				7CE1C81D2426FBE100108AE7 /* ResearchKitAudioViewController.swift */,
 			);
 			path = LoginASL;
 			sourceTree = "<group>";
@@ -253,7 +322,6 @@
 			children = (
 				7C6DBA99242065C5000075A0 /* AppDelegate.swift */,
 				7C6DBA9B242065C5000075A0 /* ViewController.swift */,
-				7C6DBA9D242065C5000075A0 /* Experience.rcproject */,
 				7C6DBA9F242065C5000075A0 /* Main.storyboard */,
 				7C6DBAA2242065C7000075A0 /* Assets.xcassets */,
 				7C6DBAA4242065C7000075A0 /* LaunchScreen.storyboard */,
@@ -265,7 +333,7 @@
 		FDFFAD7D678ADA186EC62682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60340F2C056567F12BF14EEB /* libPods-LoginASL.a */,
+				E2161780AD15402BFFEB1F56 /* libPods-LoginASL.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,6 +348,7 @@
 				7C32F098241F588300BAAF79 /* Resources */,
 				7C32F0BB241F588500BAAF79 /* Embed App Extensions */,
 				FAD62C5A07F5AC47233AD435 /* Frameworks */,
+				7CE1C8132426E84200108AE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +367,7 @@
 				7C32F0A2241F588400BAAF79 /* Sources */,
 				7C32F0A3241F588400BAAF79 /* Frameworks */,
 				7C32F0A4241F588400BAAF79 /* Resources */,
+				7CE1C8162426E84B00108AE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,9 +386,9 @@
 				7C58D8DA241CB720003044B2 /* Sources */,
 				7C58D8DB241CB720003044B2 /* Frameworks */,
 				7C58D8DC241CB720003044B2 /* Resources */,
-				7CA92A60241DC07D00F19C78 /* Embed Frameworks */,
 				7C32F0BF241F588500BAAF79 /* Embed Watch Content */,
 				BA52285AB65B7C6A48C266BA /* [CP] Copy Pods Resources */,
+				7CE1C8102426E83A00108AE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +407,7 @@
 				7C6DBA93242065C5000075A0 /* Sources */,
 				7C6DBA94242065C5000075A0 /* Frameworks */,
 				7C6DBA95242065C5000075A0 /* Resources */,
+				7CE1C7FB2426D34A00108AE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE1C81B2426F35D00108AE7 /* test.wav in Resources */,
 				7C58D8F1241CB723003044B2 /* LaunchScreen.storyboard in Resources */,
 				7C82EF78241FFCF600D8FF85 /* GoogleService-Info.plist in Resources */,
 				7C58D8EE241CB723003044B2 /* Assets.xcassets in Resources */,
@@ -425,6 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE1C81C2426F35D00108AE7 /* test.wav in Resources */,
 				7C6DBAA6242065C7000075A0 /* LaunchScreen.storyboard in Resources */,
 				7C6DBAA3242065C7000075A0 /* Assets.xcassets in Resources */,
 				7C6DBAA1242065C5000075A0 /* Main.storyboard in Resources */,
@@ -480,9 +553,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C38E1FF24258AE700BE89CE /* MySoundClassifier 1.mlmodel in Sources */,
+				7C38E1FC24258A7D00BE89CE /* ListenInterfaceController.swift in Sources */,
 				7C32F0B0241F588400BAAF79 /* NotificationController.swift in Sources */,
 				7C32F0AE241F588400BAAF79 /* ExtensionDelegate.swift in Sources */,
+				7C21E23024259DA4007AE25D /* soundModel.mlmodel in Sources */,
+				7CBCD10524255AA800641558 /* SignInterfaceController.swift in Sources */,
 				7C32F0AC241F588400BAAF79 /* InterfaceController.swift in Sources */,
+				7C1334C1242561770052D243 /* HelloVsYes-7epochs.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,12 +572,19 @@
 				7C450B8C241F1995005AD7E4 /* MsgViewController.swift in Sources */,
 				7C58D8E2241CB720003044B2 /* AppDelegate.swift in Sources */,
 				7C82EF7C2420410C00D8FF85 /* ARViewController.swift in Sources */,
+				7C21E22F24259DA4007AE25D /* soundModel.mlmodel in Sources */,
+				7C1334C0242561770052D243 /* HelloVsYes-7epochs.mlmodel in Sources */,
 				7C58D8EC241CB720003044B2 /* LoginASL.xcdatamodeld in Sources */,
 				7C34F8E9241E02FB003DD3AD /* PickerViewController.swift in Sources */,
 				7C58D8E4241CB720003044B2 /* SceneDelegate.swift in Sources */,
+				7C38E1FE24258AE700BE89CE /* MySoundClassifier 1.mlmodel in Sources */,
+				7C55EB1B242443EC008E088A /* TestingYes.rcproject in Sources */,
+				7C21E22924259C6B007AE25D /* ListenViewController.swift in Sources */,
 				7C58D8F9241CC198003044B2 /* LoginTextField.swift in Sources */,
 				7C34F8E7241DD0AC003DD3AD /* OnboardingView.swift in Sources */,
+				7CB588912420930A000EA20E /* SendInfo.swift in Sources */,
 				7C58D8FB241CE6F4003044B2 /* SignUpController.swift in Sources */,
+				7CE1C81E2426FBE100108AE7 /* ResearchKitAudioViewController.swift in Sources */,
 				7C34F8EB241E245A003DD3AD /* UserCell.swift in Sources */,
 				7CA92A64241DC47300F19C78 /* onboardingViewController.swift in Sources */,
 			);
@@ -511,6 +596,10 @@
 			files = (
 				7C6DBA9C242065C5000075A0 /* ViewController.swift in Sources */,
 				7C6DBA9A242065C5000075A0 /* AppDelegate.swift in Sources */,
+				7C38E20024258AE700BE89CE /* MySoundClassifier 1.mlmodel in Sources */,
+				7C1334C2242561770052D243 /* HelloVsYes-7epochs.mlmodel in Sources */,
+				7C21E23124259DA4007AE25D /* soundModel.mlmodel in Sources */,
+				7CE1C81F2426FBE100108AE7 /* ResearchKitAudioViewController.swift in Sources */,
 				7C6DBA9E242065C5000075A0 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,7 +681,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Debug;
 		};
@@ -614,7 +703,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Release;
 		};
@@ -627,13 +716,17 @@
 				DEVELOPMENT_TEAM = N8TSD5VH83;
 				IBSC_MODULE = LoginASLWatch_Extension;
 				INFOPLIST_FILE = LoginASLWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ArnavReddy2.LoginASL.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Debug;
 		};
@@ -646,13 +739,17 @@
 				DEVELOPMENT_TEAM = N8TSD5VH83;
 				IBSC_MODULE = LoginASLWatch_Extension;
 				INFOPLIST_FILE = LoginASLWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ArnavReddy2.LoginASL.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Release;
 		};
@@ -774,7 +871,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4997EE1B42460479F9BFFE46 /* Pods-LoginASL.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -804,7 +900,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A7F8F75FA744FAB964C21D7 /* Pods-LoginASL.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";

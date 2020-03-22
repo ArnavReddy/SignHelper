@@ -11,9 +11,14 @@ import RealityKit
 
 class ARViewController: UIViewController {
 
+    
     @IBOutlet weak var arView: ARView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //guard let anchor = try? Experience.loadMyGreatScene() else { return }
+        //guard let anchor = try? TestingYes.loadYesScene() else { return }
+        guard let anchor = try? TestingYes.loadYesScene() else { return }
+        arView.scene.anchors.append(anchor)
 
         // Do any additional setup after loading the view.
     }

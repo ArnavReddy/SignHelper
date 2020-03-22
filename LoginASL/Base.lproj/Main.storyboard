@@ -268,7 +268,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="iet-KF-HRI"/>
                         <barButtonItem key="rightBarButtonItem" title="Learn ASL" id="LYz-kY-ZG6">
                             <connections>
-                                <segue destination="iKS-oL-8ha" kind="show" id="IMM-fd-znF"/>
+                                <segue destination="qr0-AW-FUr" kind="show" id="USf-gL-Uxy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -282,22 +282,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyO-2L-mHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6987" y="-207"/>
-        </scene>
-        <!--Learn ASL-->
-        <scene sceneID="FMU-sV-Iz6">
-            <objects>
-                <viewController id="iKS-oL-8ha" customClass="ARViewController" customModule="LoginASL" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fa3-ez-ZjV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="d0L-1H-xRq"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Learn ASL" id="1Vl-QH-QRd"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eax-dn-RLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7841" y="-207"/>
         </scene>
         <!--Msg View Controller-->
         <scene sceneID="TqM-eH-Gen">
@@ -625,6 +609,109 @@
             </objects>
             <point key="canvasLocation" x="6241" y="-957"/>
         </scene>
+        <!--Learn ASL-->
+        <scene sceneID="OMc-xh-yBr">
+            <objects>
+                <viewController id="qr0-AW-FUr" customClass="ARViewController" customModule="LoginASL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tfm-hn-vum">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zk-Ze-gI8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VUo-Wi-jfg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Learn ASL" id="s6L-Jj-2HC">
+                        <barButtonItem key="rightBarButtonItem" title="Listen" id="tQ5-ui-C8J">
+                            <connections>
+                                <segue destination="SvV-aT-fXG" kind="show" id="Jz6-LM-GVQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="arView" destination="4Zk-Ze-gI8" id="hxq-qo-zWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elE-lA-Lje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7844.9275362318849" y="-207.06521739130437"/>
+        </scene>
+        <!--Sound Classification-->
+        <scene sceneID="bAO-u7-A7l">
+            <objects>
+                <viewController id="SvV-aT-fXG" customClass="ListenViewController" customModule="LoginASL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbS-0K-zdl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIR-st-NFQ">
+                                <rect key="frame" x="49" y="159" width="313" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tkR-5y-zsv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sound Classification" id="diy-MP-lxY">
+                        <barButtonItem key="rightBarButtonItem" title="Research" id="695-Az-0Na">
+                            <connections>
+                                <segue destination="wz4-HM-LPN" kind="show" id="6bR-IB-hjO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="predLabel" destination="lIR-st-NFQ" id="iEd-nw-RyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8C-ef-ATQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7844.9275362318849" y="579.61956521739137"/>
+        </scene>
+        <!--Research Kit Audio View Controller-->
+        <scene sceneID="5zW-C2-E8O">
+            <objects>
+                <viewController id="wz4-HM-LPN" customClass="ResearchKitAudioViewController" customModule="LoginASL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lv3-gT-Zd7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecs-jb-leg">
+                                <rect key="frame" x="239" y="295" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="PlaySoundWithSender:" destination="wz4-HM-LPN" eventType="touchUpInside" id="ZgX-8P-PFe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QV-zF-rEW">
+                                <rect key="frame" x="84" y="295" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="RecordWithSender:" destination="wz4-HM-LPN" eventType="touchUpInside" id="C0u-my-3f6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lTM-wo-I9k"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pzK-fd-cNz"/>
+                    <connections>
+                        <outlet property="PlayBTN" destination="Ecs-jb-leg" id="rrj-M3-cwS"/>
+                        <outlet property="RecordBTN" destination="3QV-zF-rEW" id="6dP-KV-jKk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7c-cZ-KLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8766.6666666666679" y="579.61956521739137"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="eqL-WS-qOw">
             <objects>
@@ -634,6 +721,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UpQ-c2-29x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.33283390410000002" green="0.5820410077" blue="0.79426663649999996" alpha="0.5976027397" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -654,7 +746,7 @@
         <image name="logoWName" width="458" height="426"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="l2K-Mp-2Ki"/>
+        <segue reference="D7S-pC-X6B"/>
         <segue reference="PbQ-Pc-muy"/>
     </inferredMetricsTieBreakers>
 </document>
